@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    width: 70%;
+}
+
+.search {
+    position: relative; /* Добавлено */
+    border-radius: 5px;
+    margin: 20px auto; /* Изменено */
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-multiple {
+    position: relative;
+}
+.list-words {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    left: 0;
+}
+.input {
+    border-width: 5px;
+    border-color: red;
+    margin: 0px;
+    width: 650px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.post{
+    /* display: flex; */
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(181, 181, 181);
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.upper_post {
+        padding: 20px 20px;
+}
+
+.lower_post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3557;
+    padding: 20px 20px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+}
+
+.btn {
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: aliceblue;
+    color: red;
+    border: 1px solid red;
+}
+
+.autocomplete {
+    position: absolute;
+    width: 100%; /* Изменено */
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #dfe1e5;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top: calc(100% + 5px); /* Позиционирование под input */
+    left: 0;
+}
+
+.autocomplete-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #f8f9fa;
+}
